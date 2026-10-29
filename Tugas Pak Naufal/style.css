@@ -1,0 +1,218 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f2eb; /* Beige lembut */
+    color: #2c2520; /* Cokelat tua untuk teks */
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background-color: #4a443b; /* Khaki gelap / Taupe */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10%;
+}
+
+.logo {
+    color: #f5f2eb;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #e6dfd5;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Efek Hover Navbar */
+.nav-links a:hover {
+    color: #d4b896; /* Khaki terang saat di-hover */
+}
+
+/* Common Section Styles */
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #3b332c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Home Section */
+.home-section {
+    background-color: #eae3d2; /* Sand / Khaki muda */
+    color: #2c2520;
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #b89f80; /* Border khaki hangat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.home-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #3b332c;
+}
+
+.home-content p {
+    font-size: 16px;
+    color: #5a5047;
+}
+
+/* About Section */
+.about-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2d9cc;
+    text-align: left;
+}
+
+.about-card p {
+    margin-bottom: 12px;
+    color: #443c35;
+}
+
+/* Skills Section Flexbox */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2d9cc;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efek Hover Skill Card */
+.skill-card:hover {
+    transform: translateY(-6px);
+    border-color: #b89f80;
+}
+
+.skill-card h3 {
+    color: #4a443b;
+    margin-bottom: 10px;
+}
+
+/* Projects Section Flexbox */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2d9cc;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efek Hover Project Card */
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #b89f80;
+}
+
+.project-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    color: #3b332c;
+    margin-bottom: 8px;
+}
+
+/* Contact Section */
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #8c7355;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #5c4b37;
+}
+
+/* Footer */
+footer {
+    background-color: #4a443b;
+    color: #e6dfd5;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 14px;
+}
